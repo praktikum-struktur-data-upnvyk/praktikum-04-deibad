@@ -143,6 +143,8 @@ bool hapusHalaman(DNode*& head, DNode*& tail, int nomor) {
         hapus->prev->next = hapus->next;
         hapus->next->prev = hapus->prev;
     }
+
+    delete hapus;
     return true;
 }
 
